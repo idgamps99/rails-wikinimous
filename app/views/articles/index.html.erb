@@ -1,5 +1,14 @@
-<% @articles.each do |article| %>
-  <article>
-    <h2><%= link_to article.title, article_path(article) %></h2>
-  </article>
-<% end %>
+
+
+
+
+<div class="row">
+  <div clas="col-sm-8 offset-sm-2">
+    <% @articles.each do |article| %>
+      <article class="mb-3">
+        <h2><%= link_to article.title, article_path(article), class: "link-design" %></h2>
+        <%= article.content.truncate_words(8) %>
+      </article>
+    <% end %>
+  </div>
+</div>

@@ -35,3 +35,9 @@ h1 {
 .btn-primary {
   font-size: 1rem;
 }
+
+.link-design {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
